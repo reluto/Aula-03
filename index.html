@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cart Discount</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="mainApp">
+	<div ng-controller="CartControllerFN">
+		<ul>
+			<li>{{bill.total}}</li>
+			<li>{{bill.discount}}</li>
+			<li>{{bill.subtotal}}</li>
+		</ul>
+		<div>
+			<button ng-click="addItem()">Adiciona</button>
+			<button ng-click="updateItem()">Atualiza</button>
+			<button ng-click="removeItem()">Remove</button>
+		</div>
+	</div>
+</body>
+</html>
